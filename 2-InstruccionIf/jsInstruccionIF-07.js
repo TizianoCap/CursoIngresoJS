@@ -11,6 +11,13 @@ function mostrar()
 		alert("es muy joven para no ser soltero");
 	}
 	
-
-
+/* if(edad < 18)
+	{
+		if(estadocivil != "soltero")
+		{
+			alert("es muy joven para NO ser soltero");
+		}
+		
+	}
+*/
 }//FIN DE LA FUNCIÓN

@@ -21,15 +21,19 @@ function mostrar()
     {
 	alert("eres un niño")
     }
-    else if (edad < 18) 
+    else 
 	{
-		alert ("eres un adolecente")
-	}
-	else
-	{
-		 alert("es adulto")
-	}
-	otra forma hacerloS
+	   if (edad < 18) 
+	   {
+	 	  alert ("eres un adolecente")
+	   }
+	   else
+	   {
+		   alert("es adulto")
+	   }
+    }
+	otra forma hacerlo y mejor
+    
 	*/
 
 }//FIN DE LA FUNCIÓN
