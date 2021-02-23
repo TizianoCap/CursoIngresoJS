@@ -1,21 +1,39 @@
 /*
+Capuani Tiziano
+Ejercicio 9 while
 Al presionar el botón pedir  números  hasta que el usuario quiera,
 mostrar el número máximo y el número mínimo ingresado.*/
 function mostrar()
-{	// declarar variables
-	var banderaDelPrimero;
-	var numeroIngresado;
-	var numeroMaximo;
-	var numeroMinimo;
-	var respuesta;
-	//iniciar variables
-	banderaDelPrimero="es el primero";
-	respuesta='si';
+{	
+	let numero;
+	let maximo;
+	let minimo;
+	let respuesta;
+
+	banderadelprimero=true;
+
+	respuesta= prompt("quiere ingresar un numero?? si/no");
+
 	while(respuesta=="si")
 	{
+		numero= parseInt(prompt("ingrese un numero"));
 		
-		respuesta=prompt("desea continuar?");
+		if(banderadelprimero==true || numero<minimo)
+		{
+			minimo= numero;
+			banderadelprimero=false;
+		}
+		else 
+		{
+			if(banderadelprimero==true || numero>maximo);
+			{
+				maximo= numero;
+			}
+		}
+		respuesta= prompt("quiere ingresar otro si/no");
+		
 	}
-	txtIdMaximo.value=numeroMaximo;
-	txtIdMinimmo.value=numeroMinimo;
+
+	document.getElementById("txtIdMaximo").value=maximo;
+	document.getElementById("txtIdMinimo").value=minimo;
 }//FIN DE LA FUNCIÓN

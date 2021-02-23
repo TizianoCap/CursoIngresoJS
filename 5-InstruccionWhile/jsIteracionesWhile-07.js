@@ -1,18 +1,30 @@
 /*
+Capuani Tiziano
+Ejercicio 7 while
 Al presionar el botón pedir  números  hasta que el USUARIO QUIERA 
 e informar la suma acumulada y el promedio.
 */
 function mostrar()
 {
-	var contador;
-	var acumulador;
-	var respuesta;
+	let contador;
+	let acumulador;
+	let respuesta;
+	let numero;
+
 	contador=0;
 	acumulador=0;
-	respuesta='si';
+	respuesta=prompt("quiere ingresar un numero? si/no");
 
+	while(respuesta== "si")
+	{
+		numero=parseInt(prompt("ingrese un numero"));
+		acumulador=acumulador + numero;
+		contador++;
+		respuesta=prompt("quiere ingresar otro numero? si/no");
+		
+	}
 
-	txtIdSuma.value=acumulador;
-	txtIdPromedio.value=acumulador/contador;
+	document.getElementById("txtIdSuma").value=acumulador;
+	document.getElementById("txtIdPromedio").value=acumulador/contador;
 
 }//FIN DE LA FUNCIÓN
